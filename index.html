@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Edi Carlos</title>
+    <meta name="description" content="A landing page for my wdd131 - Dynamic Web Fundamentals course, with my name: Edi Carlos da Silva to demonstrate my little knowledge of HTML, CSS and Javascript">
+    <meta name="author" content="Edi Carlos">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDd 131 - Edi Carlos</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/edi-carlos-silva/">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/mark/9?lang=eng&id=p23#p23">Scripture </a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Edi Carlos da Silva</h1>
+        <section class="card first-card">
+            <h2>About me</h2>
+            <div class="about-me">
+                <div class="about-me-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima quam iusto eos debitis totam ducimus ab maiores sit beatae soluta consequatur esse, enim libero incidunt ipsam ad, dolores quod nulla non. Est voluptatibus, natus similique sequi exercitationem dolore nulla.</p>
+                    <div class="country-section">
+                        <div class="country-section__name">
+                            <h3>Votorantim, Brazil</h3>
+                        </div>
+                        <div class="country-details">
+                            <figure>
+                                <img src="images/votorantim-flag.png" alt="A flag of Brazil Country">
+                                <figcaption>Original Flag of Votorantim City</figcaption>
+                            </figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus, consectetur laborum sequi tempora fugiat numquam corporis soluta rerum cumque est! Optio quidem suscipit ipsam distinctio numquam? Architecto voluptas dolorum eum magnam consequatur? Ut voluptatibus omnis molestiae temporibus dignissimos ipsum?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-me-photo">
+                    <img src="images/profile.jpg" alt="First image">
+                </div>
+            </div>
+        </section>
+
+        <section class="card second-card">
+            <h2>Web Dev Resources</h2>
+            <div class="dev-resources">
+                <ul>
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🚀 Edi Carlos da Silva 🚀 Brazil</p>
+        <p id="lastModified">Last modification</p>
+    </footer>
 </body>
 </html>
