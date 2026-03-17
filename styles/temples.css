@@ -51,6 +51,7 @@ header {
     max-width: 1024px;
     background-color: var(--background);
     padding: .5rem;
+    position: relative;
 }
 
 header span {
@@ -60,7 +61,7 @@ header span {
 }
 
 nav {
-    margin: 0 auto;
+    margin: 0;
     max-width: 800px;
 }
 
