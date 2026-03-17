@@ -1,0 +1,132 @@
+:root {
+    --background: #232946;
+    --headline: #fffffe;
+    --paragraph: #b8c1ec;
+    --button: #eebbc3;
+    --button-text: #232946;
+
+    --stroke: #121629;
+    --main: #b8c1ec;
+    --highlight: #eebbc3;
+    --secondary: #fffffe;
+    --tertiary: #eebbc3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-width: 360px;
+    margin: 0 auto;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background-color: var(--background);
+    color: var(--headline);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--tertiary);
+}
+
+#menu.open::before {
+    content: "X";
+    color: var(--tertiary);
+}
+
+header, footer {
+    margin: 0 auto;
+}
+
+header {
+    max-width: 1024px;
+    background-color: var(--background);
+    padding: .5rem;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: var(--headline);
+    color: var(--tertiary);
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.open li {
+    display: block;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+   
+}
+
+.active {
+    color: var(--tertiary);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+}
+
+
+footer {
+    background-color: var(--background);
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--headline);
+    max-width: 1024px;
+}
+
+footer p:first-child {
+    color: var(--button);
+    margin-bottom: .5rem;
+}
+
+footer p:last-child {
+    color: var(--headline);
+}
+
+footer p {
+    margin: 0;
+}
