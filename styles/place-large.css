@@ -1,13 +1,13 @@
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
     .hero img {
         width: 100%;
         height: auto;
     }
 
-}
+} */
 
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
 
     body {
         display: flex;
@@ -29,8 +29,8 @@
 
     .hero picture, .hero img {
         display: block;
-        width: 100%;
-        height: 100%;
+        /* width: 100%;
+        height: 100%; */
         object-fit: cover;
     }
 
@@ -44,7 +44,9 @@
     }
 
     .data ul {
-        margin-top: 1rem;
+        margin-top: .5rem;
+        margin-bottom: .1rem;
+        padding-bottom: .5rem;
     }
 
     .data h2, .weather h2 {
