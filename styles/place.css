@@ -1,5 +1,6 @@
 :root {
     --background: #004643;
+    --background-alpha: rgba(0, 70, 67, 0.8);
     --border: #436d03;
     --headline: #fffffe;
     --paragraph: #abd1c6;
@@ -8,6 +9,7 @@
 
     --stroke: #001e1d;
     --main: #e8e4e6;
+    --main-alpha: rgba(232, 228, 230, 0.8);
     --highlight: #f9bc60;
     --secondary: #abd1c6;
     --tertiary: #e16162;
@@ -21,6 +23,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 header {

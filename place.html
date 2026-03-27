@@ -24,8 +24,8 @@
     <main>
         <section class="hero">
             <picture>
-                <source media="(min-width: 1000px)" srcset="images/my-country-large.webp">
-                <source media="(min-width: 500px)" srcset="images/my-country-medium.webp">
+                <source media="(min-width: 1024px)" srcset="images/my-country-large.webp">
+                <source media="(min-width: 640px)" srcset="images/my-country-medium.webp">
                 <img src="images/my-country-small.webp" alt="A beutiful image of my country">
             </picture>
         </section>
@@ -34,15 +34,15 @@
             <ul>
                 <li>
                     <span class="data-label">Area: </span>
-                    <span class="data-information">587,041 sq km</span>
+                    <span class="data-information">8,515,767 km2</span>
                 </li>
-                <li><span class="data-label">Population: </span><span class="data-information">27,691,018</span></li>
-                <li><span class="data-label">Capital: </span><span class="data-information">Brazilia</span></li>
+                <li><span class="data-label">Population: </span><span class="data-information">213,421,037</span></li>
+                <li><span class="data-label">Capital: </span><span class="data-information">Brasília</span></li>
                 <li><span class="data-label">Languages: </span><span class="data-information">Portuguese</span></li>
-                <li><span class="data-label">Currency: </span><span class="data-information">Real Br</span></li>
-                <li><span class="data-label">Time Zone: </span><span class="data-information">UTC+3</span></li>
+                <li><span class="data-label">Currency: </span><span class="data-information">Real (R$) (BRL)</span></li>
+                <li><span class="data-label">Time Zone: </span><span class="data-information">UTC-2 to -5</span></li>
                 <li><span class="data-label">Calling Code: </span><span class="data-information">+55</span></li>
-                <li><span class="data-label">Internet TLD: </span><span class="data-information">.mg</span></li>
+                <li><span class="data-label">Internet TLD: </span><span class="data-information">.br</span></li>
                 
             </ul>
         </section>
@@ -54,11 +54,16 @@
             <ul>
                 <li>
                     <span class="data-label">Temperature: </span>
-                    <span class="data-information">10º C</span>
+                    <span class="data-information"><span id="temperature">18</span> ºC</span>
                 </li>
                 <li><span class="data-label">Conditions: </span><span class="data-information">Partly cloudy</span></li>
-                <li><span class="data-label">Wind: </span><span class="data-information">5 km/h</span></li>
-                <li><span class="data-label">Wind Chill: </span><span class="data-information">9.8 ºC</span></li>
+                <li><span class="data-label">Wind: </span><span class="data-information"><span id="windSpeed">9,72</span> km/h</span></li>
+                <li>
+                    <span class="data-label">Wind Chill: </span>
+                    <span class="data-information">
+                        <span id="windChill"></span>
+                    </span>
+                </li>
             </ul>
         </section>
     </main>
