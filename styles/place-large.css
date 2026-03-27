@@ -64,7 +64,16 @@
         padding: .5rem 1rem 0;
     }
 
+    .weather ul {
+        margin-top: 1.5rem;
+    }
+
+    .weather h2::after {
+        content: "⛅";
+    }
+
     .weather__icon {
         margin-top: 1rem;
+        display: none;
     }
 }
