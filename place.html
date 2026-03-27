@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Country Information</title>
+    <meta name="description" content="A page that shows the country I live.">
+    <meta name="author" content="Edi Carlos">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/my-country-large.webp">
+                <source media="(min-width: 500px)" srcset="images/my-country-medium.webp">
+                <img src="images/my-country-small.webp" alt="A beutiful image of my country">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>
+                    <span class="data-label">Area: </span>
+                    <span class="data-information">587,041 sq km</span>
+                </li>
+                <li><span class="data-label">Population: </span><span class="data-information">27,691,018</span></li>
+                <li><span class="data-label">Capital: </span><span class="data-information">Brazilia</span></li>
+                <li><span class="data-label">Languages: </span><span class="data-information">Portuguese</span></li>
+                <li><span class="data-label">Currency: </span><span class="data-information">Real Br</span></li>
+                <li><span class="data-label">Time Zone: </span><span class="data-information">UTC+3</span></li>
+                <li><span class="data-label">Calling Code: </span><span class="data-information">+55</span></li>
+                <li><span class="data-label">Internet TLD: </span><span class="data-information">.mg</span></li>
+                
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather__icon">
+                <img src="images/weather.svg" alt="Weather Icon" >
+            </div>
+            <ul>
+                <li>
+                    <span class="data-label">Temperature: </span>
+                    <span class="data-information">10º C</span>
+                </li>
+                <li><span class="data-label">Conditions: </span><span class="data-information">Partly cloudy</span></li>
+                <li><span class="data-label">Wind: </span><span class="data-information">5 km/h</span></li>
+                <li><span class="data-label">Wind Chill: </span><span class="data-information">9.8 ºC</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🚀 Edi Carlos da Silva 🚀 Brazil</p>
+        <p id="lastModified">Last modification</p>
+    </footer>
+</body>
+</html>
