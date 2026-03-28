@@ -14,10 +14,46 @@ body {
 }
 
 table {
-    border: 1px solid var(--border);
+    border: thin solid var(--border);
     border-collapse: collapse;
+    margin: 10px auto;
+    box-shadow: 0 0 10px var(--shadow);
 }
 
+caption {
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .85rem;
+    padding-top: 10px;
+}
+
+thead tr:first-child, thead tr:last-child th:first-child {
+    background-color: var(--back);
+    color: var(--forelight);
+}
+
+thead .theader {
+    background-color: var(--back2);
+}
+
+.blank {
+    background-color: var(--back);
+}
+
+
 td, th {
-    border: 1px solid var(--border);
+    border: 1px solid var(--borderlight);
+    padding: 7px 15px;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra);
+}
+
+tbody tr:hover {
+    background-color: var(--back2);
 }
