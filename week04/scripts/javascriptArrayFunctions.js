@@ -1,12 +1,19 @@
 let names = ['Nancy','Blessing','Jorge','Svetlana','Bob'];
 
-const namesB = names.filter(name => name.charAt(0) === "B");
+const namesB = names.filter(name => name.startsWith("B"));
 
+debugger;
 const pFilter = document.querySelector("#filter");
 
-for (const name of namesB) {
-    pFilter.textContent += `${name} `
-}
+// for (const name of namesB) {
+//     pFilter.textContent += `${name} `
+// }
+pFilter.textContent = namesB.join(" ");
+
+const pFilterJoin = document.querySelector("#filterJoin");
+
+pFilterJoin.innerHTML = names.filter(name => name.charAt(0) === "B").join(" ");
+
 
 const pMap = document.querySelector("#map");
 
