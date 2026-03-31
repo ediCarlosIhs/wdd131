@@ -1,6 +1,7 @@
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 const templesList = document.querySelector("#templesList");
+const h1 = document.querySelector("h1");
 
 const homeLink = document.querySelector("#allTemples");
 const oldLink = document.querySelector("#oldTemples");
@@ -160,6 +161,8 @@ function removeActiveClass() {
 
 homeLink.addEventListener("click", (event) => {
 
+  h1.textContent = "Home";
+
   hamButton.classList.remove("open");
   navigation.classList.remove("open");
 
@@ -170,6 +173,8 @@ homeLink.addEventListener("click", (event) => {
 });
 
 oldLink.addEventListener("click", (event) => {
+
+  h1.textContent = "Old Temples";
 
   hamButton.classList.remove("open");
   navigation.classList.remove("open");
@@ -185,9 +190,9 @@ oldLink.addEventListener("click", (event) => {
   createCard(oldTemples);
 });
 
-
-
 newLink.addEventListener("click", (event) => {
+
+  h1.textContent = "New Temples";
 
   hamButton.classList.remove("open");
   navigation.classList.remove("open");
@@ -205,6 +210,8 @@ newLink.addEventListener("click", (event) => {
 
 largeLink.addEventListener("click", (event) => {
 
+  h1.textContent = "Large Temples";
+
   hamButton.classList.remove("open");
   navigation.classList.remove("open");
 
@@ -220,6 +227,8 @@ largeLink.addEventListener("click", (event) => {
 });
 
 smallLink.addEventListener("click", (event) => {
+
+  h1.textContent = "Small Temples";
 
   hamButton.classList.remove("open");
   navigation.classList.remove("open");
