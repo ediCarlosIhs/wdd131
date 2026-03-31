@@ -160,6 +160,9 @@ function removeActiveClass() {
 
 homeLink.addEventListener("click", (event) => {
 
+  hamButton.classList.remove("open");
+  navigation.classList.remove("open");
+
   removeActiveClass()
   event.target.classList.add("active");
 
@@ -167,6 +170,9 @@ homeLink.addEventListener("click", (event) => {
 });
 
 oldLink.addEventListener("click", (event) => {
+
+  hamButton.classList.remove("open");
+  navigation.classList.remove("open");
 
   removeActiveClass()
   event.target.classList.add("active");
@@ -183,6 +189,9 @@ oldLink.addEventListener("click", (event) => {
 
 newLink.addEventListener("click", (event) => {
 
+  hamButton.classList.remove("open");
+  navigation.classList.remove("open");
+
   removeActiveClass()
   event.target.classList.add("active");
 
@@ -196,6 +205,9 @@ newLink.addEventListener("click", (event) => {
 
 largeLink.addEventListener("click", (event) => {
 
+  hamButton.classList.remove("open");
+  navigation.classList.remove("open");
+
   removeActiveClass()
   event.target.classList.add("active");
 
@@ -208,6 +220,9 @@ largeLink.addEventListener("click", (event) => {
 });
 
 smallLink.addEventListener("click", (event) => {
+
+  hamButton.classList.remove("open");
+  navigation.classList.remove("open");
 
   removeActiveClass()
   event.target.classList.add("active");
