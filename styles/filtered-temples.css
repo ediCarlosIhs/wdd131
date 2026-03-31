@@ -96,6 +96,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     padding: 1rem;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .active {

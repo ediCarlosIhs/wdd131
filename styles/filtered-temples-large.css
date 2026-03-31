@@ -14,13 +14,13 @@
         display: flex;
     }
 
+    nav a:hover {
+        box-shadow: 0 2px 0 0 var(--tertiary);
+    }
+
     .navigation li {
         flex: 1 1 100%;
         display: block;
-    }
-
-    .navigation li:hover {
-        border-bottom: 2px solid var(--tertiary);
     }
     
     #templesList {
