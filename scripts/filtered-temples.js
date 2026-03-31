@@ -16,7 +16,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "images/temples/temple-01.jpg"
+    "images/temples/temple-01.webp"
   },
   {
     templeName: "Manti Utah",
@@ -24,7 +24,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "images/temples/temple-02.jpg"
+    "images/temples/temple-02.webp"
   },
   {
     templeName: "Payson Utah",
@@ -32,7 +32,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "images/temples/temple-03.jpg"
+    "images/temples/temple-03.webp"
   },
   {
     templeName: "Yigo Guam",
@@ -40,7 +40,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-    "images/temples/temple-04.jpg"
+    "images/temples/temple-04.webp"
   },
   {
     templeName: "Washington D.C.",
@@ -48,7 +48,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "images/temples/temple-05.jpg"
+    "images/temples/temple-05.webp"
   },
   {
     templeName: "Lima Perú",
@@ -56,7 +56,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "images/temples/temple-06.jpg"
+    "images/temples/temple-06.webp"
   },
   {
     templeName: "Mexico City",
@@ -64,7 +64,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "images/temples/temple-07.jpg"
+    "images/temples/temple-07.webp"
   },
   {
     templeName: "Belém Brazil",
@@ -102,7 +102,7 @@ hamButton.addEventListener("click", () => {
 function createCard(filteredTemples) {
   templesList.innerHTML = "";
 
-  filteredTemples.forEach(temple => {
+  filteredTemples.forEach((temple, index) => {
 
 
   
@@ -137,7 +137,12 @@ function createCard(filteredTemples) {
     </ul>`
   
     const picture = document.createElement("picture");
-    picture.innerHTML = `<img src=${temple.imageUrl} alt=An image of ${temple.templeName} loading="lazy" width="400" height="250">`
+
+    if (index == 0) {
+      picture.innerHTML = `<img src=${temple.imageUrl} alt=An image of ${temple.templeName} width="400" height="250" fetchpriority="high">`;
+    } else {
+      picture.innerHTML = `<img src=${temple.imageUrl} alt=An image of ${temple.templeName} loading="lazy" width="400" height="250">`;
+    }
   
     card.appendChild(h2);
   
