@@ -33,11 +33,8 @@
         height: auto;
     }
 
-    .temple-card {
-
-        ul {
-            font-size: .7rem;
-        }
+    .temple-card ul {
+        font-size: .7rem;
     }
 
     h1 {
