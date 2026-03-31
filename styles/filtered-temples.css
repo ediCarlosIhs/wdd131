@@ -119,12 +119,13 @@ main {
     background-color: #eee;
     padding: 1.5rem;
     margin-bottom: .5rem;
+}
 
-    h2 {
+.temple-card h2 {
         margin: 0 0 1rem;
     }
 
-    ul {
+.temple-card ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -136,27 +137,26 @@ main {
         font-size: .99rem;
     }
 
-    ul li {
+.temple-card ul li {
         display: contents;
     }
 
-    .data-label {
+.temple-card .data-label {
         font-weight: 700;
         grid-column: 1;
         text-align: right;
         color: var(--card-data);
     }
 
-    .data-information {
+.temple-card .data-information {
         grid-column: 2;
         text-align: left;
     }
 
-    img {
+.temple-card img {
         max-width: 100%;
         height: auto;
         box-shadow: 0px -2px 15px var(--background);;
-    }
 }
 
 h1 {
