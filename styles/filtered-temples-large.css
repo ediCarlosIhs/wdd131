@@ -19,13 +19,21 @@
         display: block;
     }
     
-    main {
+    #templesList {
         grid-template-columns: 1fr 1fr;
+        column-gap: .5rem;
     }
 
-    main img {
+    #templesList img {
         width: 250px;
         height: auto;
+    }
+
+    .temple-card {
+
+        ul {
+            font-size: .7rem;
+        }
     }
 
     h1 {
@@ -34,7 +42,7 @@
 }
 
 @media (min-width: 1024px) {
-    main {
+    #templesList {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
