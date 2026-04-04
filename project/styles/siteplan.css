@@ -148,7 +148,6 @@ footer {
     padding: 1rem;
     text-align: center;
     color: var(--white-smoke);
-    max-width: 1024px;
 }
 
 footer p:first-child {
