@@ -1,0 +1,165 @@
+:root {
+
+    /* option two */
+    --white-smoke: #f5f5f5;
+    --white: #fff;
+    --charcoal-blue: #2c3e50;
+    --grey-olive: #7f8c8d;
+    --sky-blue: #a2d2ff;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--charcoal-blue);
+}
+
+header {
+    background-color: var(--charcoal-blue);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 8px solid var(--sky-blue);
+}
+
+h1 {
+    margin: 0;
+    color: var(--white-smoke);
+}
+
+header p {
+    color: var(--white-smoke);
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+main {
+    background-color: var(--charcoal-blue);
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--white-smoke);
+    border-radius: 8px;
+    border-left: 8px solid var(--sky-blue);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+section:last-child {
+    margin: 0;
+}
+
+section h2, section h3 {
+    color: var(--charcoal-blue);
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+section .siteName {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--charcoal-blue);
+}
+
+section p {
+    line-height: 1.6;
+    text-align: justify;
+    color: var(--charcoal-blue);
+}
+
+section p span {
+    font-weight: 700;
+    color: var(--charcoal-blue);
+}
+
+section li {
+    line-height: 1.4;
+    margin-bottom: .5rem;
+}
+
+section li:last-child {
+    margin: 0;
+}
+
+.color-box {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: 1px solid var(--grey-olive);
+}
+
+.charcoal {
+    background-color: var(--charcoal-blue);
+}
+
+.charcoal p {
+    color: var(--white-smoke);
+}
+
+.tiger {
+    background-color: var(--charcoal-blue);
+    border-left: 8px solid var(--sky-blue);
+}
+
+.tiger p {
+    color: var(--white-smoke);
+}
+
+.white-smoke {
+    background-color: var(--white-smoke);
+    /* color: var(--w); */
+}
+
+.roboto {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+figure:last-child {
+    margin-top: 1rem;
+}
+
+section img {
+    max-width: 100%;
+}
+
+section figure {
+    margin: 0;
+    text-align: center;
+}
+
+section figcaption {
+    text-align: center;
+    font-weight: 700;
+    color: var(--charcoal-blue);
+}
+
+
+footer {
+    border-top: 8px solid var(--sky-blue);
+    background-color: var(--charcoal-blue);
+    padding: 1rem;
+    text-align: center;
+    color: var(--white-smoke);
+    max-width: 1024px;
+}
+
+footer p:first-child {
+    margin-bottom: .5rem;
+}
+
+footer p {
+    color: var(--white-smoke);
+    margin: 0;
+}
+
+#lastModified {
+    color: var(--white-smoke);
+}
