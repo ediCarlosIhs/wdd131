@@ -96,10 +96,47 @@ legend {
     font-size: .8rem;
 }
 
-input[type="radio"] {
+/* old style for old input type radio */
+/* input[type="radio"] {
     margin: 0;
     width: 15px;
     height: 15px;
+} */
+
+/* stars input type radio */
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars > label {
+    color: var(--background);
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars > label:hover {
+    color: #000;
+}
+
+.stars > label::before {
+    content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+    content: "\2605";
 }
 
 .field-box__radios {
