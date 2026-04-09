@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="A page to fill a form for product review, and to trein my learn of good practices with forms.">
+    <meta name="author" content="Edi Carlos">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            
+            <fieldset class="field-box">
+                <label for="productName">Product Name</label>
+                <select name="productName" id="productName">
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="field-box">
+                <legend>Overall Rating</legend>
+                <div class="field-box__radios">
+                    <div class="field-box__radios--section">
+                        <label for="oneStar">&star;</label>
+                        <input type="radio" name="stars" value="1" id="oneStar" required>
+                    </div>
+
+                    <div class="field-box__radios--section">
+                        <label for="twoStar">&star;&star;</label>
+                        <input type="radio" name="stars" value="2" id="twoStar" required>
+                    </div>
+    
+                    <div class="field-box__radios--section">
+                        <label for="threeStar">&star;&star;&star;</label>
+                        <input type="radio" name="stars" value="3" id="threeStar" required>
+                    </div>
+    
+                    <div class="field-box__radios--section">
+                        <label for="fourStar">&star;&star;&star;&star;</label>
+                        <input type="radio" name="stars" value="4" id="fourStar" required>
+                    </div>
+    
+                    <div class="field-box__radios--section">
+                        <label for="fiveStar">&star;&star;&star;&star;&star;</label>
+                        <input type="radio" name="stars" value="4" id="fiveStar" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="field-box">
+                <label for="installationDate">Date of Installation</label>
+                <input type="date" name="installationDate" id="installationDate" required>
+            </fieldset>
+
+            <fieldset class="field-box">
+                <legend>Which features did you find useful in the product? <span class="field-box--check">(Check all that apply)</span></legend>
+
+                <div class="field-box__checkbox">
+                    <input type="checkbox" name="durability" id="durability" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+
+                <div class="field-box__checkbox">
+                    <input type="checkbox" name="easeOfUse" id="easeOfUse" value="easeOfUse">
+                    <label for="easeOfUse">Ease of Use</label>
+                </div>
+
+                <div class="field-box__checkbox">
+                    <input type="checkbox" name="Performance" id="Performance" value="Performance">
+                    <label for="Performance">Performance</label>
+                </div>
+
+                <div class="field-box__checkbox">
+                    <input type="checkbox" name="Design" id="Design" value="Design">
+                    <label for="Design">Design</label>
+                </div>
+            </fieldset>
+            
+            <fieldset class="field-box">
+                <label for="writtenReview">Written Review <span>(Optional)</span></label>
+                <textarea name="writtenReview" id="writtenReview" rows="5"></textarea>
+            </fieldset>
+
+            <fieldset class="field-box">
+                <label for="userName">Your Name <span>(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+
+            <div class="button">
+                <input type="submit" value="Post Review">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🚀 Edi Carlos da Silva 🚀 Brazil</p>
+        <p id="lastModified">Last modification</p>
+    </footer>
+</body>
+</html>
