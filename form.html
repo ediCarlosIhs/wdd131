@@ -24,8 +24,10 @@
     <main>
         <form action="review.html" method="get">
             
+            <p aria-hidden="true">Fields marked with <span class="required">*</span> are required.</p>
+
             <fieldset class="field-box">
-                <label for="productName">Product Name</label>
+                <label for="productName">Product Name <span class="required">*</span></label>
                 <select name="productName" id="productName" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
@@ -65,7 +67,7 @@
             -->
 
             <fieldset class="field-box">
-                <legend>Overall Rating</legend>
+                <legend>Overall Rating <span class="required">*</span></legend>
                     <div class="stars">
                         <input type="radio" name="stars" id="fivestar" value="5" required><label for="fivestar"></label>
                         <input type="radio" name="stars" id="fourstar" value="4" required><label for="fourstar"></label>
@@ -76,7 +78,7 @@
             </fieldset>
 
             <fieldset class="field-box">
-                <label for="installationDate">Date of Installation</label>
+                <label for="installationDate">Date of Installation <span class="required">*</span></label>
                 <input type="date" name="installationDate" id="installationDate" required>
             </fieldset>
 

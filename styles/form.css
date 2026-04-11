@@ -5,6 +5,7 @@
     --paragraph: #b8c1ec;
     --button: #eebbc3;
     --button-text: #232946;
+    --required: #810317;
 
     --stroke: #121629;
     --main: #b8c1ec;
@@ -49,6 +50,18 @@ form {
     /* border-radius: 5px; */
 }
 
+form p {
+    color: var(--background);
+    /* font-weight: 700; */
+    margin-top: 0;
+}
+
+.required {
+    font-weight: 700;
+    color: var(--required);
+    font-size: 1.1rem;
+}
+
 fieldset {
     border: none;
     margin: 0;
@@ -83,12 +96,14 @@ select {
     border: none;
     padding: .8rem;
     width: 100%;
+    border-radius: 4px;
 }
 
 textarea {
     width: 100%;
     border: none;
     padding: .8rem;
+    border-radius: 4px;
 }
 
 legend {
@@ -203,6 +218,20 @@ input[type="submit"]:hover {
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
 }
+
+input:focus, textarea:focus, select {
+    border: 2px solid var(--background);
+    outline: none;
+    border-radius: 4px;
+}
+
+/* input:required {
+    border-bottom: 8px solid red;
+} */
+
+/* input:required:valid {
+    border-bottom: 8px solid green;
+} */
 
 footer {
     background-color: var(--background);
