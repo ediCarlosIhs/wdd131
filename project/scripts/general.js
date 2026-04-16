@@ -2,11 +2,14 @@ import { generalMessages } from '../assets/messages/generalMessages.js';
 
 const STORAGE_KEY = 'viewedMessages';
 
+const showImages = localStorage.getItem('imagesEnabled');
+
 const messageElement = document.querySelector('.message');
 const messageAuthorElement = document.querySelector('.message__author');
 const next = document.querySelector("#nextMessage");
 const favorite = document.querySelector("#favorite");
 const section = document.querySelector(".messages-container");
+
 
 // section.style.backgroundImage = `url('./images/background/image-01.jpg')`;
 // section.classList.add('with-background');
@@ -91,7 +94,9 @@ function applyRandomBackground() {
     section.classList.add('with-background');
 }
 
-applyRandomBackground();
+if (showImages === 'true') {
+    applyRandomBackground();
+}
 
 // debugger;
 updateMessage();

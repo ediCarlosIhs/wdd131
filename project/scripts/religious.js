@@ -1,11 +1,13 @@
 import { religiousMessages } from '../assets/messages/religiousMessages.js';
 
 const STORAGE_KEY = 'viewedMessages';
+const showImages = localStorage.getItem('imagesEnabled');
 
 const messageElement = document.querySelector('.message');
 const messageAuthorElement = document.querySelector('.message__author');
 const next = document.querySelector("#nextMessage");
 const favorite = document.querySelector("#favorite");
+const section = document.querySelector(".messages-container");
 
 // get messages
 function getMessage() {
@@ -62,6 +64,22 @@ function getMessagesByMoment(messagesArray, storageKey) {
     localStorage.setItem(storageKey, JSON.stringify(viewedIndices));
 
     return messagesArray[targetIndex];
+}
+
+function applyRandomBackground() {
+    
+    const randomNumber = Math.floor(Math.random() * 12) + 1;
+
+    const imagePath = `url('./images/background/image-${randomNumber}.webp')`;
+
+    const fullBackground = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${imagePath}`;
+
+    section.style.backgroundImage = fullBackground;
+    section.classList.add('with-background');
+}
+
+if (showImages === 'true') {
+    applyRandomBackground();
 }
 
 // update message in the screen

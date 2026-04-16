@@ -1,0 +1,143 @@
+:root {
+    --background: #2c3e50;
+    --border: #a2d2ff;
+    --section: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1368px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    background-color: var(--section);
+
+    /* to make the main element grow the maximum */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--background);
+    padding: 1rem;
+    color: var(--section);
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--border);
+    text-decoration: none;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    color: var(--section);
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--border);
+}
+
+#menu.open::before {
+    content: "X";
+    color: var(--border);
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.open li {
+    display: block;
+}
+
+nav a {
+    color: var(--border);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+nav a.active {
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+main {
+    /* This declaration with the body, makes the main grow the maximum */
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section {
+    background-color: var(--background);
+    padding: 1rem;
+    min-height: 100%;
+    flex: 1;
+    border-left: 8px solid var(--border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+    color: var(--section);
+    text-align: center;
+}
+
+
+
+
+
+footer {
+    background-color: var(--background);
+    padding: 1rem;
+    text-align: center;
+    color: var(--section);
+    max-width: 1368px;
+}

@@ -7,11 +7,12 @@
     <meta name="description" content="A website to get aleatory positive messages and get motivation from them.">
     <meta name="author" content="Edi Carlos">
 
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/about-medium.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <link rel="stylesheet" href="styles/settings-medium.css">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/pageControl.js" defer></script>
+    <script src="scripts/settings.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,7 +36,35 @@
         <section>
             <h2>Settings</h2>
 
+            <p>Here you can submit a form to set some configurations</p>
+
+            <p><span>Enable images: </span> If you set this checkbox you will see the messages with a background image. There are twelve images that will be shown in an aleatory way.</p>
+
+            <p><span>Birthday: </span>If you submit your birthday date, this information will be used in the calculation to define the aleatory messages.</p>
+
+            <form action="confirmation.html" method="get">
             
+                <fieldset class="field-box">
+                    <div class="field-box__birthday">
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+
+                    <div class="field-box__checkbox">
+                        <input type="checkbox" name="enableImages" id="enableImages" value="enableImages">
+                        <label for="enableImages">Enable Images</label>
+                    </div>
+                </fieldset>
+
+                <div class="button">
+                    <input type="submit" value="Save configuration" id="saveConfiguration">
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="remove configuration" id="removeConfiguration">
+                </div>
+
+            </form>
 
         </section>
 
