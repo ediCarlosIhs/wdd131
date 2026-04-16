@@ -113,28 +113,47 @@ main {
 
 section {
     background-color: var(--background);
-    transition: background 0.5s ease;
     padding: 1rem;
     min-height: 100%;
     flex: 1;
     border-left: 8px solid var(--border);
     border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.messages-container.with-background {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
 }
 
 h2 {
     color: var(--section);
+    margin: 0;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: var(--section);
+}
+
+
+section p {
+    color: var(--section);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+section .images {
+    display: grid;
+    gap: 1rem;
+}
+
+.images p {
+    text-align: center;
+}
+
+picture {
+    text-align: center;
+}
+
+picture img {
+    max-width: 100%;
+    height: auto;
 }
 
 .message {
