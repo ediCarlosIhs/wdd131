@@ -183,6 +183,7 @@ h2 {
 
 .control img:hover {
     cursor: pointer;
+    opacity: .5;
 }
 
 footer {
