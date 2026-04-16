@@ -78,10 +78,6 @@ function applyRandomBackground() {
     section.classList.add('with-background');
 }
 
-if (showImages === 'true') {
-    applyRandomBackground();
-}
-
 // update message in the screen
 function updateMessage() {
 
@@ -90,6 +86,10 @@ function updateMessage() {
     if (messageObj) {
         messageElement.textContent = messageObj.message;
         messageAuthorElement.textContent = messageObj.author;
+    }
+
+    if (localStorage.getItem('imagesEnabled') === 'true') {
+        applyRandomBackground();
     }
 }
 
