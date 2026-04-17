@@ -24,21 +24,12 @@
 
     }
 
-
-    .message {
-        font-size: 4rem;
+    section h2 {
+        font-size: 3rem;
     }
 
-    section .images {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .images h3, .images p {
-        grid-column: 1 / 4;
-    }
-
-    .images p {
-        text-align: center;
+    section a {
+        font-size: 1.5rem;
     }
 
 }

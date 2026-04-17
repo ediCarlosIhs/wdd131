@@ -131,7 +131,15 @@ h2 {
 }
 
 
+section a {
+    text-decoration: none;
+    color: var(--section);
+    font-size: 1.2rem;
+}
 
+section a:hover {
+    cursor: pointer;
+}
 
 
 footer {
