@@ -52,7 +52,10 @@ function getMessagesByMoment(messagesArray, storageKey) {
 
     // reset if all messages were seen
     if (viewedIndices.length >= messagesArray.length) {
-        viewedIndices = [];
+
+        localStorage.setItem(storageKey, JSON.stringify([]));
+
+        return { isFinished: true };
     }
 
     // get indice by the moment (destine)
@@ -74,11 +77,18 @@ function getMessagesByMoment(messagesArray, storageKey) {
 // update message in the screen
 function updateMessage() {
 
-    const messageObj = getMessagesByMoment(generalMessages, STORAGE_KEY);
+    const result = getMessagesByMoment(generalMessages, STORAGE_KEY);
 
-    if (messageObj) {
-        messageElement.textContent = messageObj.message;
-        messageAuthorElement.textContent = messageObj.author;
+    if (result && result.isFinished) {
+        messageElement.textContent = "All general messages were seen. Click the link again to restart.";
+        messageAuthorElement.textContent = "";
+        
+        return;
+    }
+
+    if (result) {
+        messageElement.textContent = result.message;
+        messageAuthorElement.textContent = result.author;
     }
 
     if (localStorage.getItem('imagesEnabled') === 'true') {

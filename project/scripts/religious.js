@@ -1,6 +1,6 @@
 import { religiousMessages } from '../assets/messages/religiousMessages.js';
 
-const STORAGE_KEY = 'viewedMessages';
+const STORAGE_KEY = 'religiousViewedIndices';
 const showImages = localStorage.getItem('imagesEnabled');
 
 const messageElement = document.querySelector('.message');
@@ -35,7 +35,7 @@ function getMessage() {
     // get selected message indice
     const originalIndex = religiousMessages.indexOf(selectedMessage);
     religiousViewedIndices.push(originalIndex);
-    localStorage.setItem('viewedMessages', JSON.stringify(religiousViewedIndices));
+    localStorage.setItem('religiousViewedIndices', JSON.stringify(religiousViewedIndices));
 
     return selectedMessage;
 }
@@ -47,7 +47,10 @@ function getMessagesByMoment(messagesArray, storageKey) {
 
     // reset if all messages were seen
     if (viewedIndices.length >= messagesArray.length) {
-        viewedIndices = [];
+
+        localStorage.setItem(storageKey, JSON.stringify([]));
+
+        return { isFinished: true };
     }
 
     // get indice by the moment (destine)
@@ -81,11 +84,18 @@ function applyRandomBackground() {
 // update message in the screen
 function updateMessage() {
 
-    const messageObj = getMessagesByMoment(religiousMessages, STORAGE_KEY);
+    const result = getMessagesByMoment(religiousMessages, STORAGE_KEY);
+    
+    if (result && result.isFinished) {
+        messageElement.textContent = "All Religious messages were seen. Click the link again to restart.";
+        messageAuthorElement.textContent = "";
+        
+        return;
+    }
 
-    if (messageObj) {
-        messageElement.textContent = messageObj.message;
-        messageAuthorElement.textContent = messageObj.author;
+    if (result) {
+        messageElement.textContent = result.message;
+        messageAuthorElement.textContent = result.author;
     }
 
     if (localStorage.getItem('imagesEnabled') === 'true') {
