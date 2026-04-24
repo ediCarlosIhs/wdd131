@@ -180,7 +180,35 @@ without reproach (James 1:5-8) including the wisdom I need for life and work (Is
         author: "Colossians 1:20"
     },
     {
-        message: `God’s power works on my behalf in love.`,
+        message: `God's power works on my behalf in love.`,
         author: "Ephesians 1:19, 3:20, 2 Thessalonians 1:11"
+    },
+    {
+        message: `I am a child of God with eternal potential and purpose.`,
+        author: `Romans 8:16-17`
+    },
+    {
+        message: `Jesus Christ can help me do all things as I exercise faith in Him.`,
+        author: `Philippians 4:13; Ether 12:27; Moroni 7:33`
+    },
+    {
+        message: `I have power to choose, and I am responsible for my own learning.`,
+        author: `2 Nephi 2:14, 16; Doctrine and Covenants 58:27-28`
+    },
+    {
+        message: `I can learn from the Holy Spirit as I love, teach, and learn with others.`,
+        author: `John 13:34-35; John 14:26-27;`
+    },
+    {
+        message: `With God's help, I can press forward even when I face obstacles.`,
+        author: `2 Nephi 31:20; 2 Nephi 32:9;`
+    },
+    {
+        message: `I improve my learning by counseling with God daily about my efforts.`,
+        author: `Proverbs 3:5-6; Matthew 7:7-8; Alma 37:37`
+    },
+    {
+        message: `If I have an eye single to the glory of God, I can be filled with the Holy Ghost and receive gifts of the Spirit.`,
+        author: `Acts 2:4; D&C 46:8-26; 1 Corinthians 12:10; Moroni 10:15-17`
     }
 ]
